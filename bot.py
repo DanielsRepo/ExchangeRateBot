@@ -4,13 +4,12 @@ import os
 
 import requests
 import telebot
+from flask import Flask, request
 
 from db import save_rates, check_loaded_rates
 from utils import build_graph
-from flask import Flask, request
 from credentials import TOKEN, HEROKU_URL
 
-from pprint import pprint
 
 bot = telebot.TeleBot(TOKEN)
 
