@@ -5,7 +5,7 @@ WORKDIR /bot
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-RUN mkdir -p ./tmp
+RUN mkdir -p ./bot/tmp
 
 RUN pip install --upgrade pip && \
     pip install pipenv

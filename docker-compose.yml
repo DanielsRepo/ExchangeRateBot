@@ -5,7 +5,7 @@ services:
   bot:
     build:
       context: .
-    command: python bot.py
+    command: python bot/bot.py
     volumes:
       - .:/bot
     links:
