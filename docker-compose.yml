@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  bot:
+    build:
+      context: .
+    command: python bot.py
+    volumes:
+      - .:/bot
+    links:
+      - mongodb
+
+  mongodb:
+    image: mongo:4.4.4
+
